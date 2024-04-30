@@ -1,0 +1,20 @@
+composer:
+  last: Haydn
+  first: Johann Michael
+title: Ah ingrato m’inganni
+id: MH 70
+genre: aria
+scoring: S (solo), 2 ob, 2 cor (\flat B), 2 vl, vla, b, bc
+license: cc-by-sa-4.0
+sources:
+  A1:
+    siglum: F-Pn
+    shelfmark: MS-17672
+    date: 1764-12-16
+    rism: 840016293
+    url: https://gallica.bnf.fr/ark:/12148/btv1b550067313
+    license: custom (free for non-commercial purposes)
+    principal: true
+imslp:
+parts:
+  co12: Corno I, II in \flat B
