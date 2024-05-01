@@ -12,13 +12,13 @@
   markup-system-spacing.minimum-distance = #10
   system-system-spacing.basic-distance = #19.5
   system-system-spacing.minimum-distance = #19.5
-  % systems-per-page = #2
+  systems-per-page = #2
 }
 
 \book {
   \bookpart {
     \section "Ah ingrato m’inganni"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 3\cm }
     \score { %\articulate
       <<
@@ -31,7 +31,7 @@
         \new StaffGroup \with { \smallGroupDistance } <<
           \new Staff <<
             \set Staff.instrumentName = \transposedName "Corno I, II" "B" "flat"
-            % \transpose c b,
+            \transpose c b,
             \partCombine #'(0 . 10) \AriaCornoI \AriaCornoII
           >>
         >>
@@ -69,7 +69,7 @@
         \new FiguredBass { \AriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 90 } % 75 – 90
     }
   }
 }
