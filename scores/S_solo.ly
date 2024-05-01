@@ -3,9 +3,15 @@
 \include "../definitions.ly"
 \include "score_settings/coro.ly"
 
+\paper {
+  system-system-spacing.basic-distance = #20
+  system-system-spacing.minimum-distance = #20
+  systems-per-page = #6
+}
+
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "Ah ingrato m’inganni"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
@@ -13,33 +19,15 @@
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "Soprano"
-            \new Voice = "Soprano" { \dynamicUp \xxxSoprano }
+            \new Voice = "Soprano" { \dynamicUp \AriaSoprano }
           }
-          \new Lyrics \lyricsto Soprano \xxxSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Alto"
-            \new Voice = "Alto" { \dynamicUp \xxxAlto }
-          }
-          \new Lyrics \lyricsto Alto \xxxAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Tenore"
-            \new Voice = "Tenore" { \dynamicUp \xxxTenore }
-          }
-          \new Lyrics \lyricsto Tenore \xxxTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \xxxBasso }
-          }
-          \new Lyrics \lyricsto Basso \xxxBassoLyrics
+          \new Lyrics \lyricsto Soprano \AriaSopranoLyrics
         >>
         \new Staff {
-          \set Staff.instrumentName = "Organo"
-          \xxxOrgano
+          \set Staff.instrumentName = \markup \center-column { "Basso" "continuo" }
+          \AriaBassoContinuo
         }
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \AriaBassFigures }
       >>
     }
   }

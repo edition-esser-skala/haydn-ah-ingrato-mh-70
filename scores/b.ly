@@ -6,24 +6,15 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "Ah ingrato m’inganni"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Bassi"
-          \xxxOrgano
+          \AriaBassoContinuo
         }
-      >>
-    }
-  }
-  \bookpart {
-    \section "2" "Second"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \yyyOrgano }
       >>
     }
   }

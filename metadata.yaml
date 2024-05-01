@@ -17,4 +17,5 @@ sources:
     principal: true
 imslp:
 parts:
-  co12: Corno I, II in \flat B
+  cor12: Corno I, II in \flat B
+  S_solo: Soprano solo
